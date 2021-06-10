@@ -1,0 +1,182 @@
+
+nav.lo, article{
+    border: 4.5px solid #ad89ff;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+nav.lo{
+    position: relative;
+    width: 95%;
+    left: 5%;
+    
+}
+
+article{
+    position: absolute;
+    width: 95%;
+    left: 5%;
+    height: 180%;
+    
+}
+
+aside{
+    position: relative;
+    width: 10%;
+    height: 80%;
+    top: -15%;
+   
+}
+
+section.me{
+    position: absolute;
+    width: 96%;
+    height: 90%;
+    background-image: url("../imagenesPA/fondoblanco.webp");
+}
+
+
+.Spider{
+    position: absolute;
+    height: 90px;
+    bottom: 18%;
+}
+
+.cuadro1{
+    position: relative;
+    width: 22%;
+    height: 30px;
+    display: block;
+    
+}
+.cuadro2{
+    position: relative;
+    width: 90px;
+    height: 30px;
+    display: block;
+  
+}
+.cuadro3{
+    position: relative;
+    width: 28%;
+    height: 30px;
+    display: block;
+   
+}
+.escribir2{
+    position: relative;
+    padding-left:  5px;
+}
+.escribir{
+    position: absolute;
+    left: 60%;
+    width: 60vh;
+    height: 250px;
+    top:80px;
+}
+.botones{
+position: absolute;
+left: 15%;
+border:        1px solid #556699;
+border-radius: 11px;
+box-shadow:    1px 0 #444444;
+color:         #000000;
+display:       inline-block;
+font:          italic bold 18px/1 "Open Sans", sans-serif;
+text-align:    center;
+}
+.botones2{
+    position: absolute;
+left: 30%;
+border:        1px solid #556699;
+border-radius: 11px;
+box-shadow:    1px 0 #444444;
+color:         #000000;
+display:       inline-block;
+font:          italic bold 18px/1 "Open Sans", sans-serif;
+text-align:    center;
+}
+.botones3{
+    position: absolute;
+background-image: url("../imagenesPA/nieve.gif");
+top: 80%;
+left: 18%;
+border:        1px solid #556699;
+border-radius: 11px;
+box-shadow:    1px 0 #444444;
+color:         #000000;
+display:       inline-block;
+font:          italic bold 18px/1 "Open Sans", sans-serif;
+text-align:    center;
+}
+.botones4_1{
+    position: relative;
+    top: 5%;
+    background: transparent;
+    background:    transparent;
+    border:        1px solid #556699;
+    border-radius: 11px;
+    box-shadow:    1px 0 #444444;
+    color:         #000000;
+    display: block;
+    font:          italic bold 18px/1 "Open Sans", sans-serif;
+    text-align:    center;
+}
+.botones4{
+    position: relative;
+    top: 25%;
+    background: transparent;
+    background:    transparent;
+    border:        1px solid #556699;
+    border-radius: 11px;
+    box-shadow:    1px 0 #444444;
+    color:         #000000;
+    display: block;
+    font:          italic bold 18px/1 "Open Sans", sans-serif;
+    text-align:    center;
+}
+.botones5{
+    position: relative;
+    top: 45%;
+    background: transparent;
+    background:    transparent;
+    border:        1px solid #556699;
+    border-radius: 11px;
+    box-shadow:    1px 0 #444444;
+    color:         #000000;
+    display: block;
+    font:          italic bold 18px/1 "Open Sans", sans-serif;
+    text-align:    center;
+}
+.botones6{
+    position: relative;
+    top: 10%;
+    background: transparent;
+    background:    transparent;
+    border:        1px solid #556699;
+    border-radius: 11px;
+    box-shadow:    1px 0 #444444;
+    color:         #000000;
+    display: block;
+    font:          italic bold 18px/1 "Open Sans", sans-serif;
+    text-align:    center;
+}
+.texto{
+    background-image: url("../imagenesPA/nieve.gif");
+}
+.texto1{
+    background-image: url("../imagenesPA/nieve.gif");
+    height: 230px;
+}
+
+.segundo{
+    position: absolute;
+    bottom: 1%;
+    position: absolute;
+    height: 50%;
+    right: 0.68%;
+    width: 80%;
+    left: 20%;
+    top: 450px;
+}
