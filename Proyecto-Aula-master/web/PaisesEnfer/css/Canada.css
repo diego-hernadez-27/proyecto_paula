@@ -1,0 +1,220 @@
+section{
+    border: 4.5px solid #0aa5d4c5;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+
+article{
+    position: absolute;
+    width: 92%;
+    left: 3%;
+    height: 10%;
+
+}
+
+aside{
+    position: relative;
+    width: 10%;
+    height: 80%;
+    bottom: 2%;
+    
+}
+
+
+
+
+.Spider{
+    position: absolute;
+    height: 90px;
+    bottom: 18%;
+}
+
+img.hola{
+    position: absolute;
+    left: 5%;
+}
+
+
+
+
+
+.tercero{
+    position: absolute;
+    bottom: 1%;
+   
+    height: 350%;
+    right: 0.68%;
+    width: 98%;
+    left: 0%;
+    top: 320px;
+}
+
+.p{
+    height: 150px;
+    left: -20%;
+    top: 600px;
+    border-radius: 20px;
+    height: 100px;
+}
+
+section.l{
+    margin: 100px;
+    display: none;
+    justify-content: center;
+    max-height: 800px;
+    height: 680px;
+    
+}
+
+.l{
+    position: absolute;
+    bottom: 1%;
+    height: 340%;
+    right: 0.80%;
+    width: 101%;
+    left: -9%;
+    top: 500px;
+}
+
+
+
+
+
+
+/*este es el footer*/
+footer{
+    width: 100%;
+    background: #051929;
+    color: white;   
+}
+
+.foterd{
+    position: absolute;
+    width: 104%;
+    left: 0%;
+    top: 230%;
+    height: 25%;
+
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 20px;
+}
+
+.colum1 p{
+    font-size: 15px;
+    color: white;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 400px;
+
+}
+
+.colum2 h1{
+    font-size: 20px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 20px;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;  
+    background: #122331;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;  
+    padding: 20px;
+}
+
+.copyright{
+    color: white;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width: 1100px){
+
+    .container-body{
+        flex-wrap: wrap;
+    }
+
+    .colum1{
+        max-width: 100%;
+    }
+
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
