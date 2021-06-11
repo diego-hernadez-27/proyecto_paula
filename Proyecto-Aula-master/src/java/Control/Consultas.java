@@ -123,13 +123,54 @@ public class Consultas extends Conexion{
         return false;
     }
     
-    
+    public boolean actulizar(String nombre, String paterno, String materno, int edad, String contraseña, String fper, String fpor, String usuario){
         
-   /*public static void main (String[] args){
-        Consultas co = new Consultas();  
-        System.out.println(co.registrar("Dieguin", "Canayin", "Gefin", 12, "si@si.com", "DaoDiego", "contra", "jaj", "jujju"));        
+        PreparedStatement ps = null;
+        
+        try{
+            
+            String q = "update prueba set nom_usu = ?, appat_usu = ?, apmat_usu = ?, edad_usu = ?, con_usu = ?, per_usu = ?, por_usu = ? "
+                    + "where user_usu = ?";
+            
+            ps = getConnection().prepareStatement(q);
+           
+            ps.setString(1, nombre);
+            ps.setString(2, paterno);
+            ps.setString(3, materno);
+            ps.setInt(4, edad);
+            ps.setString(5, contraseña);
+            ps.setString(6, fper);
+            ps.setString(7, fpor);
+            ps.setString(8, usuario);
+                        
+            if(ps.executeUpdate() == 1){
+                return true;
+            }
+                   
+        }catch(Exception e){
+            System.out.println("Error: " + e);
+        }finally{
+            
+            try{
+                
+                if(getConnection() != null) getConnection().close();
+                if(ps != null) ps.close();
+                
+            }catch (Exception e){
+                System.out.println("Error: " + e);
+            }
+            
+        }
+        
+        return false;
     }
     
+        
+   public static void main (String[] args){
+        Consultas co = new Consultas();  
+        System.out.println(co.actulizar("Diguin", "Canayin", "Gefin", 12, "contra", "jaj", "jujju", "DiegoHuntex"));        
+    }
+     /*
     public static void main (String[] args){
         Consultas co = new Consultas();  
         System.out.println(co.borrar("DaoDiego", "contra"));        
