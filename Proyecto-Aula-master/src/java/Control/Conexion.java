@@ -16,7 +16,7 @@ public class Conexion {
     public static Connection getConnection(){
         String url, userName, password;
         
-        url = "jdbc:mysql://localhost/prueba";
+        url = "jdbc:mysql://localhost/proyecto";
         userName = "root";
         password = "admin";
         Connection con = null;

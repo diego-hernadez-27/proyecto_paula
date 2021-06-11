@@ -46,11 +46,10 @@ public class Actualizar extends HttpServlet {
         
             Consultas co = new Consultas();
         if(co.actulizar(nom, pat, mat, edad, pass, fper, fpor, usu)){
-            response.sendRedirect("menu.jsp");
+            response.sendRedirect("perfil.jsp");
         }else{
             response.sendRedirect("error.jsp");
         }
-        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

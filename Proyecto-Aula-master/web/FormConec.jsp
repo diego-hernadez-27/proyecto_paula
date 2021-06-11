@@ -9,7 +9,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title</title>
+      <link rel="stylesheet" href="./css/Tablas.css">
+        <title></title>
     </head>
     <body>
         
@@ -421,33 +422,43 @@
             %>
             
             <h1><center>RESULTADOS DEL TEST</center></h1>
-            <table>
-                <tr>
-                    <td><h1><%=puntajeCV%>/100</h1></td>
-                    <td><h1><%= resCV%></h1></td>
+            <table class="Tabla-Consulta" style="text-align:center; width: 100%;border: 2px;" >
+                <thead> <tbody>
+                 <tr>
+                             <th><h2> COVID </h2></th>
+                             <th><h2> DIABETES </h2></th>
+                             <th><h2> CONJUNTIVITIS </h2></th>
+                             <th><h2> GINGIVITIS </h2></th>
+                             <th><h2> HIPERTENSION ARTERIAL </h2></th>
+                 </tr>
+                 </thead>
+                     <tbody>
+ 
+                             <th><h2> COVID </h2></th>
+                             <th><h2> DIABETES </h2></th>
+                             <th><h2> CONJUNTIVITIS </h2></th>
+                             <th><h2> GINGIVITIS </h2></th>
+                             <th><h2> HIPERTENSION ARTERIAL </h2></th>
+ 
+                             <th></th>
+                             <th></th>
+                         </tr>
+ 
                     
-                </tr>                    
-                <tr>
-                    <td><h1><%=puntajeD%>/100</h1></td>
-                    <td><h1><%= resD%></h1></td>
-                    
-                </tr>    
-                <tr>
-                    <td><h1><%=puntajeCON%>/100</h1></td>
-                    <td><h1><%= resCON%></h1></td>
-                    
-                </tr>
-                <tr>
-                    <td><h1><%=puntajeGIN%>/100</h1></td>
-                    <td><h1><%= resGIN%></h1></td>
-                    
-                </tr>
-                <tr>
-                    <td><h1><%=puntajeHIPER%>/100</h1></td>
-                    <td><h1><%= resHIPER%></h1></td>
-                    
-                </tr>    
-            </table>    
+                          <tr>
+                     <td><h2><%=puntajeCV%>/100</h2></td>
+                     <td><h2><%= resCV%></h2></td>
+                     <td><h2><%=puntajeD%>/100</h2></td>
+                     <td><h1><%= resD%></h1></td>
+                     <td><h2><%=puntajeCON%>/100</h2></td>
+                     <td><h1><%= resCON%></h1></td>
+                     <td><h2><%=puntajeGIN%>/100</h2></td>
+                     <td><h1><%= resGIN%></h1></td>
+                     <td><h1><%=puntajeHIPER%>/100</h1></td>
+                     <td><h1><%= resHIPER%></h1></td>
+                         </tr>
+                     </tbody>
+                 </table>    
             <div>
                 <h1><center>**AVISO**</center></h1>
                 <h3>ESTE TEST SOLO SIRVE PARA TENER UNA IDEA DE LAS POSIBLES ENFERMEDADES QUE USTED ESTE PADECIENDO YA QUE 

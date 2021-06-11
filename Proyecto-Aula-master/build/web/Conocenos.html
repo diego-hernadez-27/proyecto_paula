@@ -28,8 +28,9 @@
                             <a href="#" class="menu-item">Conocenos</a>
                             <ul class="dropdown-menu">
                                 <li><a href="Casosdeexito.html" class="menu-item">Casos de exito</a></li>
-                                <li><a href="Conocenos.html" class="menu-item">Conocenos</a></li>
-                                <li><a href="Productosyservicios.html" class="menu-item">Productos y servicios</a></li>
+                              <li><a href="Conocenos.html" class="menu-item">Conocenos</a></li>
+                              
+                              <li><a href="Productosyservicios.html" class="menu-item">Productos y servicios</a></li>
                               
                             </ul>
                           </li>
@@ -39,117 +40,101 @@
                                 Contacto
                             </a>
                         </li>
-                        <li><small><small><a href="./perfil.html" class="menu-item"><img src="./img/perfil.png" alt="" style="width: 30px; height: 30px; border-radius: 10px; align-items: center;"></a></li></small></small>
-                        <li><small><small><a href="#modal" id="show-modal" class="menu-item"><img src="./img/registro.png" alt="" style="width: 40px; height: 40px; border-radius: 10px;"></a></li></small></small>
+                        <li><small><small><a href="perfil.jsp" class="menu-item"><img src="./img/perfil.png" alt="" style="width: 30px; height: 30px; border-radius: 10px; align-items: center;"></a></small></small></li>
+                        <li><small><small><a href="#modal" id="show-modal" class="menu-item"><img src="./img/registro.png" alt="" style="width: 40px; height: 40px; border-radius: 10px;"></a></small></small></li>
     
-                            <aside id="modal" class="modal">
-                                <div class="content-modal">
-                                    <header class="hola">
-                                        <a href="#" class="close-modal">X</a>
-                                        <h2>Crea tu nuevo usuario</h2>
-                                        <article>
-                                            <br>
-                                            <label>Nombre:</label>
-                                            <input type="text" name="nombre" >
-                                            <br>
-                                            <br>
-                                            <label>Apellido Paterno:</label>
-                                            <input type="text" name="appat" >
-                                            <br>
-                                            <br>
-                                            <label>Apellido Materno</label>
-                                            <input type="text" name="apmat" >
-                                            <br>
-                                            <br>
-                                            <label>Edad</label>
-                                            <input type="number" name="edad" min="01" max="99" size="2">
-                                            <br>
-                                            <br>
-                                            <label>Correo</label>
-                                            <input type="email" name="correo" >
-                                            <br>
-                                            <br>
-                                            <label>Nombre de usuario</label>
-                                            <input type="text" name="usuario" >
-                                            <br>
-                                            <br>
-                                            <label>Contraseña</label>
-                                            <input type="text" name="contraseña" >
-                                            <br>
-                                            <br>
-                                            <label>Repetir Contraseña</label>
-                                            <input type="text" name="r_contraseña">
-                                            <br>
-                                            <br>
-                                            <input type="submit" value="Registro de Usuarios" class="boton">
-                                            <input type="reset" value="Borrar Registro" class="boton">
-                                            <div class="columIni">
-                                                <div class="rowIni">
-                                                    <img src="./img/menu/facebook.png">
-                                                    <label>Iniciar Sesión con Facebook</label>
-                                                </div>
-                                                <div class="rowIni">
-                                                    <img src="./img/menu/google.png" class="google">
-                                                    <label>Iniciar Sesion con Google</label>
-                                            </div>
+                        <aside id="modal" class="modal">
+                            <div class="content-modal">
+                                <header class="hola">
+                                    <a href="#" class="close-modal">X</a>
+                                    <h2>Crea tu nuevo usuario</h2>
+                                    <article>
+                                        <br>
+                                        <form name="formulario" method="post" action="Registrar" enctype="multipart/form-data">
+                                            <label><font color="white">Nombre:</font></label>
+                                        <input type="text" name="nom" >
+                                        <br>
+                                        <br>
+                                        <label><font color="white">Apellido Paterno:</font></label>
+                                        <input type="text" name="appat" >
+                                        <br>
+                                        <br>
+                                        <label><font color="white">Apellido Materno:</font></label>
+                                        <input type="text" name="apmat" >
+                                        <br>
+                                        <br>
+                                        <label><font color="white">Edad:</font></label>
+                                        <input type="number" name="edad" min="01" max="99" size="2">
+                                        <br>
+                                        <br>
+                                        <label><font color="white">Correo:</font></label>
+                                        <input type="email" name="email" >
+                                        <br>
+                                        <br>
+                                        <label><font color="white">Nombre de usuario:</font></label>
+                                        <input type="text" name="usuario" >
+                                        <br>
+                                        <br>
+                                        <label><font color="white">Contraseña:</font></label>
+                                        <input type="password" name="cont" >
+                                        <br>
+                                        <br>
+                                        <label><font color="white">Foto de perfil:</font></label>
+                                        <input type="file" name="fper" >
+                                        <br>
+                                        <br>
+                                        <label><font color="white">Foto de portada:</font></label>
+                                        <input type="file" name="fpor" >
+                                        <br>
+                                        <br>
+                                        <input type="submit" value="Registro de Usuarios" class="boton" >
+                                        <input type="reset" value="Limpiar Campos"  class="boton">
+                                        </form>
+                                    </article>
+                                </header> 
+                            </div>
+                            <a href="#" class="btn-close-modal"></a>
+                        </aside>
+    
+                        <li><small><small><a href="#modal2" class="menu-item2"><img src="./img/contrasena-de-inicio-de-sesion.png" alt="" style="width: 40px; height: 40px; border-radius: 10px;"></a></small></small></li>
+                        <aside id="modal2" class="modal2">
+                            <div class="content-modal2">
+                                <header class="hola">
+                                    <a href="#" class="close-modal2">X</a>
+                                    <h2>Usar un usuario</h2>
+                                    <article>
+                                    <br><br>
+                                    <!-- <SCRIPT  language=JavaScript> 
+                                            function go(){
                                             
-                                        </article>
-                                    </header> 
-                                </div>
-                                <a href="#" class="btn-close-modal"></a>
-                            </aside>
-                           
-    
-                        <li><small><small><a href="#modal2" class="menu-item2"><img src="./img/contrasena-de-inicio-de-sesion.png" alt="" style="width: 40px; height: 40px; border-radius: 10px;"></a></li></small></small>
-                            <aside id="modal2" class="modal2">
-                                <div class="content-modal2">
-                                    <header class="hola">
-                                        <a href="#" class="close-modal2">X</a>
-                                        <h2>Usar un usuario</h2>
-                                        <article>
-                                            <br>
-                                            <label>Nombre de usuario:</label>
-                                            <input type="text" name="nombre2" >
-                                            <br>
-                                            <br>
-                                            <label>Correo:</label>
-                                            <input type="email" name="correo2" >
-                                            <br>
-                                            <br>
-                                            <label>Contraseña</label>
-                                            <input type="text" name="contraseña2">
-                                            <br>
-                                            <br>
-                                            <input type="submit" value="Iniciar Sesión" class="boton">
+                                            if (document.form.password.value=='CONTRASEÑA' && document.form.login.value=='USUARIO'){ 
+                                                    document.form.submit(); 
+                                                } 
+                                                else{ 
+                                                     alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+                                                } 
+                                            } 
+                                            </SCRIPT> -->
+                                            <form name=form action="InicioSesion">
+                                            
+                                                <label><font color="white">Usuario:</font>    <INPUT type="text" name="user"> </label>
+                                                <br>
+                                                <br>
+                                            <label ><font color="white">Contraseña:</font> <INPUT type="password" name="pass"></label> 
+                                                <br>
+                                                <br>
+                                            <input type="submit" value=Acceder class="boton">
                                             <input type="reset" value="Borrar Datos" class="boton">
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <h1>O</h1>
-                                            <br>
-                                            <div class="columIni">
-                                                <div class="rowIni">
-                                                    <img src="./img/menu/facebook.png">
-                                                    <label>Iniciar Sesión con Facebook</label>
-                                                </div>
-                                                <div class="rowIni">
-                                                    <img src="./img/menu/google.png" class="google">
-                                                    <label>Iniciar Sesion con Google</label>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </header> 
-                                </div>
-                                <a href="#" class="btn-close-modal2"></a>
-                            </aside>
-                        
+                                            </form> 
+                                        <br>
+                                    </article>
+                                </header> 
+                            </div>
+                            <a href="#" class="btn-close-modal2"></a>
+                        </aside>
+                
                     </ul>
-                </nav>
-            </header>
-            <section class="section">
-                    </ul>
-
-            </div>
+            </div>        
         </nav>
     </header>   
 

@@ -49,8 +49,6 @@ public class Consultas extends Conexion{
         return false;
     }
 
-    
-    
     public boolean autentificacion(String usuario, String contraseña) {
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -83,10 +81,7 @@ public class Consultas extends Conexion{
         return false;
     }
     
-    
-    
-    
-    public boolean borrar(String usuario, String contraseña) {
+     public boolean borrar(String usuario, String contraseña) {
         
 
         PreparedStatement ps = null;
@@ -166,13 +161,8 @@ public class Consultas extends Conexion{
     }
     
         
-   public static void main (String[] args){
+    /*public static void main (String[] args){
         Consultas co = new Consultas();  
-        System.out.println(co.actulizar("Diguin", "Canayin", "Gefin", 12, "contra", "jaj", "jujju", "DiegoHuntex"));        
-    }
-     /*
-    public static void main (String[] args){
-        Consultas co = new Consultas();  
-        System.out.println(co.borrar("DaoDiego", "contra"));        
+        System.out.println(co.autentificacion("DiegoHuntex", "SoyGenial"));        
     }*/
 }

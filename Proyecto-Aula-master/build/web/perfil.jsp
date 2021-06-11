@@ -4,6 +4,7 @@
     Author     : hp
 --%>
 
+<%@page import="Servlets.InicioSesion"%>
 <%@page contentType="text/html" pageEncoding="UTF-8" language="java" import="java.sql.*, java.util.*, java.text.*" %>
 <!DOCTYPE html>
 <!DOCTYPE html>
@@ -49,7 +50,7 @@
                                 Contacto
                             </a>
                         </li>
-                        <li><small><small><a href="perfil.html" class="menu-item"><img src="./img/perfil.png" alt="" style="width: 30px; height: 30px; border-radius: 10px; align-items: center;"></a></small></small></li>
+                        <li><small><small><a href="perfil.jsp" class="menu-item"><img src="./img/perfil.png" alt="" style="width: 30px; height: 30px; border-radius: 10px; align-items: center;"></a></small></small></li>
                         <li><small><small><a href="#modal" id="show-modal" class="menu-item"><img src="./img/registro.png" alt="" style="width: 40px; height: 40px; border-radius: 10px;"></a></small></small></li>
     
                             <aside id="modal" class="modal">
@@ -240,16 +241,75 @@
             </div>
             <div class="perfil-usuario-footer">
                 <ul class="lista-datos">
-                    <li><i class="icono fas fa-user-tag"></i>Nombre: </li>
-                    <li><i class="icono fas fa-weight"></i>Peso: </li>
-                    <li><i class="icono fas fa-allergies"></i>Alergias: </li>
-                    <li><img src="https://img.icons8.com/material-sharp/24/000000/age.png"/>Edad: </li>
+                    
+                    <%
+                        Connection conn = null;
+                        Statement set = null;
+                        ResultSet rs = null;
+                        String url, userName, password, driver;
+                        url = "jdbc:mysql://localhost/registro";
+                        userName = "root";
+                        password = "n0m3l0";
+                        driver = "com.mysql.jdbc.Driver";
+                        
+                        
+                        
+                        
+                        try{
+                            Class.forName(driver);
+                            conn = DriverManager.getConnection(url, userName, password);
+                            try{
+                                set = conn.createStatement();
+                                //necesito los parametros del formulario
+                                String que;
+                                
+                                que = "select * from prueba where user_usu = ?";
+                                
+                                rs = set.executeQuery(que);
+
+                    %>
+                  
+                    
+                    
+                    <li><i class="icono fas fa-user-tag"></i>Nombre: <%=rs.getString("nom_usu")%></li>
+                    <li><i class="icono fas fa-allergies"></i>Usuario: <%=rs.getString("user_usu")%></li>
                 </ul>
                 <ul class="lista-datos">
-                    <li><i class="icono fas fa-map-marker-alt"></i>Dirección email</li>
+                    <li><i class="icono fas fa-map-marker-alt"></i>Dirección email: <%=rs.getString("email_usu")%></li>
                     <li><i class="icono fas fa-user-check"></i> Registro.</li>
                 </ul>
             </div>
+                    
+                            <%                         
+                                
+                            rs.close();    
+                            set.close();
+                            
+                            }catch(SQLException ed){
+                                System.out.println("Error al consultar la tabla");
+                                System.out.println(ed.getMessage());
+                                %>
+                </tbody>
+            </table> 
+                <br>
+                <h1>Error no se pueden visualiar los datos en este momento</h1>
+                                <%
+                            
+                            }
+                        conn.close();
+                        
+                        }catch(Exception e){
+                            System.out.println("Error al conectar la bd");
+                            System.out.println(e.getMessage());
+                            System.out.println(e.getStackTrace());
+                        %>
+                <br>
+                <h1>Sitio en Construccion</h1>        
+                        <%
+                        
+                        }
+                        
+                    %>
             <div class="redes-sociales">
                 <a href="" class="boton-redes facebook fab fa-facebook-f"><i class="icon-facebook"></i></a>
                 <a href="" class="boton-redes twitter fab fa-twitter"><i class="icon-twitter"></i></a>

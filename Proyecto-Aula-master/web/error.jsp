@@ -14,6 +14,6 @@
     <body>
         <h1>Oh no, ha ocurrido un error :(</h1>
         <br>
-        <a href="index.html">Regresar al menu principal</a>    
+        <a href="index.jsp">Regresar al menu principal</a>    
     </body>
 </html>

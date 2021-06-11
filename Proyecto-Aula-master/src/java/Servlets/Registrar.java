@@ -48,7 +48,7 @@ public class Registrar extends HttpServlet {
         
         Consultas co = new Consultas();
         if(co.registrar(nom, pat, mat, edad, email, usu, pass, fper, fpor)){
-            response.sendRedirect("menu.jsp");
+            response.sendRedirect("Formulario.html");
         }else{
             response.sendRedirect("error.jsp");
         }

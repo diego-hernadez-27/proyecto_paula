@@ -10,25 +10,9 @@ package Modelo;
  * @author 25666
  */
 public class UsuarioMo {
-
-    public String getFotoperfil() {
-        return fotoperfil;
-    }
-
-    public void setFotoperfil(String fotoperfil) {
-        this.fotoperfil = fotoperfil;
-    }
-
-    public String getFotoportada() {
-        return fotoportada;
-    }
-
-    public void setFotoportada(String fotoportada) {
-        this.fotoportada = fotoportada;
-    }
     
     private int id, edad;
-    private String nombre, paterno, materno, correo, usuario, contraseña, fotoperfil, fotoportada;
+    private String nombre, paterno, materno, correo, usuario, contraseña;
     
     public UsuarioMo(){}
 

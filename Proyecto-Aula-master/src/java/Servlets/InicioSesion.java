@@ -44,7 +44,8 @@ public class InicioSesion extends HttpServlet {
          }else{
             response.sendRedirect("error.jsp");
          }
-    
+         
+         
     }
 
     
