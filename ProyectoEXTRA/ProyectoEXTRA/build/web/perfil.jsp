@@ -107,12 +107,10 @@
     </header>
     </div>
         
-         <section class="seccion-perfil-usuario">
+        <section class="seccion-perfil-usuario">
         <div class="perfil-usuario-header">
             <div class="perfil-usuario-portada">
-                <button type="button" class="boton-portada">
-                    <i class="far fa-image"></i> Cambiar fondo
-                </button>
+
             </div>
         </div>
         <div class="perfil-usuario-body">
@@ -135,9 +133,19 @@
                 <a href="" class="boton-redes instagram fab fa-instagram"><i class="icon-instagram"></i></a>
             </div>
         </div>
-    </section>
+        </section>
         
-
+                <section class="accioneskawaii">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h3>Elija lo que quiera hacer con su usuario</h3>
+                    <br>
+                    <a href="actualizar.jsp"><img src="./img/Actualizar.png" width="150" height="80"></a>
+                    <br>
+                    <a href="borrar.jsp"><img src="./img/Borrar.png" width="150" height="80"></a>
+                </section>            
         
     </body>
 </html>

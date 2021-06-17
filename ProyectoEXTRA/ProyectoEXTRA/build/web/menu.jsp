@@ -50,12 +50,12 @@
             <div class="mega-menu blog">
               <div class="content">
                 <div class="col">
-                  <a href="#" class="img-wrapper"
-                    ><span class="img"
-                      ><img
+                  <a href="#" class="img-wrapper">
+                   <span class="img">
+                      <img
                         src="https://picsum.photos/400?random=2"
-                        alt="Random Image" /></span
-                  ></a>
+                        alt="Random Image" /></span>
+                  </a>
                   <h2>COVID</h2>
                   <p>
                       INFORMACION DE LA ENFERMEDAD
@@ -76,12 +76,12 @@
                   <a href="#" class="read-more">Realizar test</a>
                 </div>
                 <div class="col">
-                  <a href="#" class="img-wrapper"
-                    ><span class="img"
-                      ><img
+                  <a href="#" class="img-wrapper">
+                    <span class="img">
+                        <img
                         src="https://picsum.photos/400?random=4"
-                        alt="Random Image" /></span
-                  ></a>
+                        alt="Random Image" /></span>
+                  </a>
                   <h2>CONJUNTIVIS</h2>
                   <p>
                       INFORMACION DE LA ENFERMEDAD

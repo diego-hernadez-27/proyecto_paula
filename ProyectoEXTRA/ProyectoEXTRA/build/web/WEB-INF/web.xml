@@ -12,6 +12,14 @@
         <servlet-name>cerrarsesionservlet</servlet-name>
         <servlet-class>Servlet.cerrarsesionservlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>actualizarusuarioi</servlet-name>
+        <servlet-class>Servlet.actualizarusuarioi</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>borrarusuario</servlet-name>
+        <servlet-class>Servlet.borrarusuario</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>iniciarsesion</servlet-name>
         <url-pattern>/iniciar</url-pattern>
@@ -23,6 +31,14 @@
     <servlet-mapping>
         <servlet-name>cerrarsesionservlet</servlet-name>
         <url-pattern>/cerrarsesionservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>actualizarusuarioi</servlet-name>
+        <url-pattern>/actualizar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>borrarusuario</servlet-name>
+        <url-pattern>/borrar</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

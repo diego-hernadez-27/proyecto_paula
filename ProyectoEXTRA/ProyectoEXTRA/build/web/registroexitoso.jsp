@@ -20,7 +20,7 @@
         <center><h1>REGISTRO EXITOSO</h1></center>
         <br>
         <center><a href="index.jsp">Siguiente</a></center>
-
+       </div>
     </form>
     </body>
 </html>

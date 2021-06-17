@@ -27,10 +27,10 @@
                 <label for="">Contraseña</label>
             </div>
 
-            <button type="submit" value="Registrarme" id="btnregistrar">Registrar</button>
+            <button type="submit" value="Registrarme" id="btnregistrar">Iniciar Sesión</button>
             <br>
             <br>
-            <center>¿No tienes una cuenta?<a href="registro.jsp">Iniciar sesión</a></center>
+            <center>¿No tienes una cuenta?<a href="registro.jsp">Registrarse</a></center>
             
             </div>
             

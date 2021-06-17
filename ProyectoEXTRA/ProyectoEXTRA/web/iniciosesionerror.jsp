@@ -21,7 +21,7 @@
         <br>
         <center><a href="index.jsp">Iniciar Sesión</a></center>
         <br>
-        <center><a href="registro.jsp">Iniciar Sesión</a></center>
+        <center><a href="registro.jsp">Registrarse</a></center>
         </div>
         </form>
     </body>

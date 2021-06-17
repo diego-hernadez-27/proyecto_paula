@@ -5,8 +5,8 @@ import java.io.InputStream;
 
 public class mousuario {
     
-    public int id, edad;
-    public String nombre, apellido, contraseña, usuario, correo, fperfil, fportada;
+    private int id, edad;
+    private String nombre, apellido, contraseña, usuario, correo, fperfil, fportada;
 
     public int getId() {
         return id;
