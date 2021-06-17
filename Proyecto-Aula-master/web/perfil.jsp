@@ -4,7 +4,6 @@
     Author     : hp
 --%>
 
-<%@page import="Servlets.InicioSesion"%>
 <%@page contentType="text/html" pageEncoding="UTF-8" language="java" import="java.sql.*, java.util.*, java.text.*" %>
 <!DOCTYPE html>
 <!DOCTYPE html>
@@ -16,6 +15,7 @@
     <title>Proyecto aula</title>
     <link rel="stylesheet" href="./css/perfilestilo.css">
     <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/Tablas.css">
     <link rel="stylesheet"  href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     
@@ -50,7 +50,7 @@
                                 Contacto
                             </a>
                         </li>
-                        <li><small><small><a href="perfil.jsp" class="menu-item"><img src="./img/perfil.png" alt="" style="width: 30px; height: 30px; border-radius: 10px; align-items: center;"></a></small></small></li>
+                        <li><small><small><a href="perfil.html" class="menu-item"><img src="./img/perfil.png" alt="" style="width: 30px; height: 30px; border-radius: 10px; align-items: center;"></a></small></small></li>
                         <li><small><small><a href="#modal" id="show-modal" class="menu-item"><img src="./img/registro.png" alt="" style="width: 40px; height: 40px; border-radius: 10px;"></a></small></small></li>
     
                             <aside id="modal" class="modal">
@@ -62,31 +62,31 @@
                                             <br>
                                             <form name="formulario" method="post" action="Registrar">
                                             <label>Nombre:</label>
-                                            <input type="text" name="nom" >
+                                            <input type="text" name="nom" color="white">
                                             <br>
                                             <br>
                                             <label>Apellido Paterno:</label>
-                                            <input type="text" name="appat" >
+                                            <input type="text" name="appat" color="white">
                                             <br>
                                             <br>
                                             <label>Apellido Materno</label>
-                                            <input type="text" name="apmat" >
+                                            <input type="text" name="apmat" color="white">
                                             <br>
                                             <br>
                                             <label>Edad</label>
-                                            <input type="number" name="edad" min="01" max="99" size="2">
+                                            <input type="number" name="edad" min="01" max="99" size="2" color="white">
                                             <br>
                                             <br>
                                             <label>Correo</label>
-                                            <input type="email" name="email" >
+                                            <input type="email" name="email" color="white">
                                             <br>
                                             <br>
                                             <label>Nombre de usuario</label>
-                                            <input type="text" name="usuario" >
+                                            <input type="text" name="usuario" color="white">
                                             <br>
                                             <br>
                                             <label>Contraseña</label>
-                                            <input type="password" name="cont" >
+                                            <input type="password" name="cont" color="white">
                                             <br>
                                             <br>
                                             <input type="submit" value="Registro de Usuarios" class="boton" >
@@ -118,12 +118,12 @@
                                                     } 
                                                 } 
                                                 </SCRIPT> -->
-                                                <form name="form" action="InicioSesion">
+                                                <form name=form action="InicioSesion">
                                                 
-                                                <label> Usuario:    <INPUT type="text" name="user"> </label>
+                                                <label> Usuario:, <INPUT type="text" name="user" color="white"> </label>
                                                     <br>
                                                     <br>
-                                                <label > Contraseña: <INPUT type="password" name="pass"></label> 
+                                                <label > Contraseña: <INPUT type="pass" name="pass" color="white"></label> 
                                                     <br>
                                                     <br>
                                                 <input type="submit" value=Acceder class="boton">
@@ -147,79 +147,6 @@
  
 
 
-    <footer class="foter">
-
-        <div class="container-footer-all">
-
-            <div class="container-body">
-
-                <div class="colum1">
-                    <h1>Mas informacion de la compañia</h1>
-
-                    <p>Esta compañia se dedica a la venta de software integrado con un
-                        conjunto de cosas que no se lo que estoy escribiendo, este
-                        texto es solo para llenara informacion en el cuadro de informacion
-                        de la compañia.</p>
-
-                </div>
-
-                <div class="colum2">
-
-                    <h1>Redes Sociales</h1>
-
-                    <div class="row">
-                        <img src="./img/menu/facebook.png">
-                        <label>Siguenos en Facebook</label>
-                    </div>
-                    <div class="row">
-                        <img src="./img/menu/twitter.png">
-                        <label>Siguenos en Twitter</label>
-                    </div>
-                    <div class="row">
-                        <img src="./img/menu/instagram.png">
-                        <label>Siguenos en Instagram</label>
-                    </div>
-
-
-
-                </div>
-
-                <div class="colum3">
-
-                    <h1>Informacion Contactos</h1>
-
-                    <div class="row2">
-                        <img src="./img/menu/house.png">
-                        <label>La Romana,
-                            Republica Dominicana
-                            Manuel del Cabral
-                            Casa # 27</label>
-                    </div>
-
-                    <div class="row2">
-                        <img src="./img/menu/smartphone.png">
-                        <label>+1-829-395-2064</label>
-                    </div>
-
-                    <div class="row2">
-                        <img src="./img/menu/contact.png">
-                        <label>Correo de la empresa que creare</label>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="container-footer">
-            <div class="footer">
-                <div class="copyright">
-                    © 2021 Todos los Derechos Reservados | <a href="">SPIDER BYTE</a>
-                </div>
-            </div>
-        </div>
-    </footer>
     
     <section class="seccion-perfil-usuario">
         <div class="perfil-usuario-header">
@@ -241,75 +168,16 @@
             </div>
             <div class="perfil-usuario-footer">
                 <ul class="lista-datos">
-                    
-                    <%
-                        Connection conn = null;
-                        Statement set = null;
-                        ResultSet rs = null;
-                        String url, userName, password, driver;
-                        url = "jdbc:mysql://localhost/registro";
-                        userName = "root";
-                        password = "n0m3l0";
-                        driver = "com.mysql.jdbc.Driver";
-                        
-                        
-                        
-                        
-                        try{
-                            Class.forName(driver);
-                            conn = DriverManager.getConnection(url, userName, password);
-                            try{
-                                set = conn.createStatement();
-                                //necesito los parametros del formulario
-                                String que;
-                                
-                                que = "select * from prueba where user_usu = ?";
-                                
-                                rs = set.executeQuery(que);
-
-                    %>
-                  
-                    
-                    
-                    <li><i class="icono fas fa-user-tag"></i>Nombre: <%=rs.getString("nom_usu")%></li>
-                    <li><i class="icono fas fa-allergies"></i>Usuario: <%=rs.getString("user_usu")%></li>
+                    <li><i class="icono fas fa-user-tag"></i>Nombre: </li>
+                    <li><i class="icono fas fa-weight"></i>Peso: </li>
+                    <li><i class="icono fas fa-allergies"></i>Alergias: </li>
+                    <li><img src="https://img.icons8.com/material-sharp/24/000000/age.png"/>Edad: </li>
                 </ul>
                 <ul class="lista-datos">
-                    <li><i class="icono fas fa-map-marker-alt"></i>Dirección email: <%=rs.getString("email_usu")%></li>
+                    <li><i class="icono fas fa-map-marker-alt"></i>Dirección email</li>
                     <li><i class="icono fas fa-user-check"></i> Registro.</li>
                 </ul>
             </div>
-                    
-                            <%                         
-                                
-                            rs.close();    
-                            set.close();
-                            
-                            }catch(SQLException ed){
-                                System.out.println("Error al consultar la tabla");
-                                System.out.println(ed.getMessage());
-                                %>
-                </tbody>
-            </table> 
-                <br>
-                <h1>Error no se pueden visualiar los datos en este momento</h1>
-                                <%
-                            
-                            }
-                        conn.close();
-                        
-                        }catch(Exception e){
-                            System.out.println("Error al conectar la bd");
-                            System.out.println(e.getMessage());
-                            System.out.println(e.getStackTrace());
-                        %>
-                <br>
-                <h1>Sitio en Construccion</h1>        
-                        <%
-                        
-                        }
-                        
-                    %>
             <div class="redes-sociales">
                 <a href="" class="boton-redes facebook fab fa-facebook-f"><i class="icon-facebook"></i></a>
                 <a href="" class="boton-redes twitter fab fa-twitter"><i class="icon-twitter"></i></a>
@@ -324,19 +192,6 @@
             </div>
         </div>
     </section>
-    
-    <article>
-                <form action="Borrar" method="post">
-                    <label> Usuario:<INPUT type="text" name="usue"> </label>
-                    <br>
-                    <br>
-                    <label > Contraseña:<INPUT type="password" name="passe"></label> 
-                    <br>                                                    
-                    <br>
-                    <input type="submit" value="Borrar Usuario" class="boton">
-                    <input type="reset" value="Borrar Datos" class="boton">                             
-                </form>
-            </article>
     
 <secttion>
     <%
@@ -747,35 +602,42 @@
             %>
             
             <h1><center>RESULTADOS DEL TEST</center></h1>
-            <table>
-                <tr>
-                    <td><h1><%=puntajeCV%>/100</h1></td>
-                    <td><h1><%= resCV%></h1></td>
-                    
-                </tr>                    
-                <tr>
-                    <td><h1><%=puntajeD%>/100</h1></td>
-                    <td><h1><%= resD%></h1></td>
-                    
-                </tr>    
-                <tr>
-                    <td><h1><%=puntajeCON%>/100</h1></td>
-                    <td><h1><%= resCON%></h1></td>
-                    
-                </tr>
-                <tr>
-                    <td><h1><%=puntajeGIN%>/100</h1></td>
-                    <td><h1><%= resGIN%></h1></td>
-                    
-                </tr>
-                <tr>
-                    <td><h1><%=puntajeHIPER%>/100</h1></td>
-                    <td><h1><%= resHIPER%></h1></td>
-                    
-                </tr>    
-            </table> 
-            
-            
+            <table  border="2" class="Tablas" style="text-align:center; width: 80%; border:2px black">
+                <thead>
+                 <tr>
+                             <th><h2>TEST</h2></th>
+                             <th><h2> COVID </h2></th>
+                             <th><h2> DIABETES </h2></th>
+                             <th><h2> CONJUNTIVITIS </h2></th>
+                             <th><h2> GINGIVITIS </h2></th>
+                             <th><h2> HIPERTENSION ARTERIAL </h2></th>
+                 </tr>
+                 </thead>
+ 
+                             <th><h2>PUNTOS</h2></th>
+                             <td><h2><%=puntajeCV%>/100</h2></td>
+                             <td><h2><%=puntajeD%>/100</h2></td>
+                             <td><h2><%=puntajeCON%>/100</h2></td>
+                             <td><h2><%=puntajeGIN%>/100</h2></td>
+                             <td><h2><%=puntajeHIPER%>/100</h2></td>
+ 
+                         </tr>
+ 
+                     <tbody>
+                          <tr>
+                     <th><h2>RESULTADO</h2></th>
+                     <td><h2><%= resCV%></h2></td>
+ 
+                     <td><h2><%= resD%></h2></td>
+ 
+                     <td><h2><%= resCON%></h2></td>
+ 
+                     <td><h2><%= resGIN%></h2></td>
+ 
+                     <td><h2><%= resHIPER%></h2></td>
+                         </tr>
+                     </tbody>
+                 </table>
             <div>
                 <h1><center>**AVISO**</center></h1>
                 <h3>ESTE TEST SOLO SIRVE PARA TENER UNA IDEA DE LAS POSIBLES ENFERMEDADES QUE USTED ESTE PADECIENDO YA QUE 
@@ -809,8 +671,6 @@
            
        %>
 </secttion>
-
-
 
 
     <script src="./js/index.js"></script>

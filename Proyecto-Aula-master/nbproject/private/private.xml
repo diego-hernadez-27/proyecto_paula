@@ -3,11 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/hp/Downloads/proyecto_paula-master/Proyecto-Aula--master/src/java/Servlets/InicioSesion.java</file>
-            <file>file:/C:/Users/hp/Downloads/proyecto_paula-master/Proyecto-Aula--master/web/css/perfilestilo.css</file>
-            <file>file:/C:/Users/hp/Downloads/proyecto_paula-master/Proyecto-Aula--master/web/css/menu.css</file>
-            <file>file:/C:/Users/hp/Downloads/proyecto_paula-master/Proyecto-Aula--master/web/perfil.jsp</file>
-            <file>file:/C:/Users/hp/Downloads/proyecto_paula-master/Proyecto-Aula--master/src/java/Servlets/Registrar.java</file>
+            <file>file:/C:/Users/25666/Documents/PA/Proyecto-Aula-master/web/FormConec.jsp</file>
+            <file>file:/C:/Users/25666/Documents/PA/Proyecto-Aula-master/src/java/Control/Conexion.java</file>
+            <file>file:/C:/Users/25666/Documents/PA/Proyecto-Aula-master/src/java/Servlets/Registrar.java</file>
+            <file>file:/C:/Users/25666/Documents/PA/Proyecto-Aula-master/web/Formulario.html</file>
+            <file>file:/C:/Users/25666/Documents/PA/Proyecto-Aula-master/src/java/Servlets/Borrar.java</file>
+            <file>file:/C:/Users/25666/Documents/PA/Proyecto-Aula-master/web/Admin.html</file>
+            <file>file:/C:/Users/25666/Documents/PA/Proyecto-Aula-master/src/java/Servlets/Actualizar.java</file>
+            <file>file:/C:/Users/25666/Documents/PA/Proyecto-Aula-master/src/java/Control/Consultas.java</file>
+            <file>file:/C:/Users/25666/Documents/PA/Proyecto-Aula-master/src/java/Modelo/UsuarioMo.java</file>
+            <file>file:/C:/Users/25666/Documents/PA/Proyecto-Aula-master/web/index.jsp</file>
+            <file>file:/C:/Users/25666/Documents/PA/Proyecto-Aula-master/web/Contacto.html</file>
+            <file>file:/C:/Users/25666/Documents/PA/Proyecto-Aula-master/src/java/Servlets/InicioSesion.java</file>
+            <file>file:/C:/Users/25666/Documents/PA/Proyecto-Aula-master/web/Conocenos.html</file>
+            <file>file:/C:/Users/25666/Documents/PA/Proyecto-Aula-master/web/Casosdeexito.html</file>
+            <file>file:/C:/Users/25666/Documents/PA/Proyecto-Aula-master/web/Productosyservicios.html</file>
+            <file>file:/C:/Users/25666/Documents/PA/Proyecto-Aula-master/web/perfil.jsp</file>
         </group>
     </open-files>
 </project-private>

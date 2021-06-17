@@ -53,95 +53,88 @@
                         <li><small><small><a href="perfil.jsp" class="menu-item"><img src="./img/perfil.png" alt="" style="width: 30px; height: 30px; border-radius: 10px; align-items: center;"></a></small></small></li>
                         <li><small><small><a href="#modal" id="show-modal" class="menu-item"><img src="./img/registro.png" alt="" style="width: 40px; height: 40px; border-radius: 10px;"></a></small></small></li>
     
-                        <aside id="modal" class="modal">
-                            <div class="content-modal">
-                                <header class="hola">
-                                    <a href="#" class="close-modal">X</a>
-                                    <h2>Crea tu nuevo usuario</h2>
-                                    <article>
-                                        <br>
-                                        <form name="formulario" method="post" action="Registrar" enctype="multipart/form-data">
-                                            <label><font color="white">Nombre:</font></label>
-                                        <input type="text" name="nom" >
-                                        <br>
-                                        <br>
-                                        <label><font color="white">Apellido Paterno:</font></label>
-                                        <input type="text" name="appat" >
-                                        <br>
-                                        <br>
-                                        <label><font color="white">Apellido Materno:</font></label>
-                                        <input type="text" name="apmat" >
-                                        <br>
-                                        <br>
-                                        <label><font color="white">Edad:</font></label>
-                                        <input type="number" name="edad" min="01" max="99" size="2">
-                                        <br>
-                                        <br>
-                                        <label><font color="white">Correo:</font></label>
-                                        <input type="email" name="email" >
-                                        <br>
-                                        <br>
-                                        <label><font color="white">Nombre de usuario:</font></label>
-                                        <input type="text" name="usuario" >
-                                        <br>
-                                        <br>
-                                        <label><font color="white">Contraseña:</font></label>
-                                        <input type="password" name="cont" >
-                                        <br>
-                                        <br>
-                                        <label><font color="white">Foto de perfil:</font></label>
-                                        <input type="file" name="fper" >
-                                        <br>
-                                        <br>
-                                        <label><font color="white">Foto de portada:</font></label>
-                                        <input type="file" name="fpor" >
-                                        <br>
-                                        <br>
-                                        <input type="submit" value="Registro de Usuarios" class="boton" >
-                                        <input type="reset" value="Limpiar Campos"  class="boton">
-                                        </form>
-                                    </article>
-                                </header> 
-                            </div>
-                            <a href="#" class="btn-close-modal"></a>
-                        </aside>
+                            <aside id="modal" class="modal">
+                                <div class="content-modal">
+                                    <header class="hola">
+                                        <a href="#" class="close-modal">X</a>
+                                        <h2>Crea tu nuevo usuario</h2>
+                                        <article>
+                                            <br>
+                                            <form name="formulario" method="post" action="Registrar">
+                                            <label>Nombre:</label>
+                                            <input type="text" name="nom" color="white">
+                                            <br>
+                                            <br>
+                                            <label>Apellido Paterno:</label>
+                                            <input type="text" name="appat" color="white">
+                                            <br>
+                                            <br>
+                                            <label>Apellido Materno</label>
+                                            <input type="text" name="apmat" color="white">
+                                            <br>
+                                            <br>
+                                            <label>Edad</label>
+                                            <input type="number" name="edad" min="01" max="99" size="2" color="white">
+                                            <br>
+                                            <br>
+                                            <label>Correo</label>
+                                            <input type="email" name="email" color="white">
+                                            <br>
+                                            <br>
+                                            <label>Nombre de usuario</label>
+                                            <input type="text" name="usuario" color="white">
+                                            <br>
+                                            <br>
+                                            <label>Contraseña</label>
+                                            <input type="password" name="cont" color="white">
+                                            <br>
+                                            <br>
+                                            <input type="submit" value="Registro de Usuarios" class="boton" >
+                                            <input type="reset" value="Limpiar Campos"  class="boton">
+                                            </form>
+                                        </article>
+                                    </header> 
+                                </div>
+                                <a href="#" class="btn-close-modal"></a>
+                            </aside>
+                           
     
                         <li><small><small><a href="#modal2" class="menu-item2"><img src="./img/contrasena-de-inicio-de-sesion.png" alt="" style="width: 40px; height: 40px; border-radius: 10px;"></a></small></small></li>
-                        <aside id="modal2" class="modal2">
-                            <div class="content-modal2">
-                                <header class="hola">
-                                    <a href="#" class="close-modal2">X</a>
-                                    <h2>Usar un usuario</h2>
-                                    <article>
-                                    <br><br>
-                                    <!-- <SCRIPT  language=JavaScript> 
-                                            function go(){
-                                            
-                                            if (document.form.password.value=='CONTRASEÑA' && document.form.login.value=='USUARIO'){ 
-                                                    document.form.submit(); 
+                            <aside id="modal2" class="modal2">
+                                <div class="content-modal2">
+                                    <header class="hola">
+                                        <a href="#" class="close-modal2">X</a>
+                                        <h2>Usar un usuario</h2>
+                                        <article>
+                                        <br><br>
+                                        <!-- <SCRIPT  language=JavaScript> 
+                                                function go(){
+                                                
+                                                if (document.form.password.value=='CONTRASEÑA' && document.form.login.value=='USUARIO'){ 
+                                                        document.form.submit(); 
+                                                    } 
+                                                    else{ 
+                                                         alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+                                                    } 
                                                 } 
-                                                else{ 
-                                                     alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
-                                                } 
-                                            } 
-                                            </SCRIPT> -->
-                                            <form name=form action="InicioSesion">
-                                            
-                                                <label><font color="white">Usuario:</font>    <INPUT type="text" name="user"> </label>
-                                                <br>
-                                                <br>
-                                            <label ><font color="white">Contraseña:</font> <INPUT type="password" name="pass"></label> 
-                                                <br>
-                                                <br>
-                                            <input type="submit" value=Acceder class="boton">
-                                            <input type="reset" value="Borrar Datos" class="boton">
-                                            </form> 
-                                        <br>
-                                    </article>
-                                </header> 
-                            </div>
-                            <a href="#" class="btn-close-modal2"></a>
-                        </aside>
+                                                </SCRIPT> -->
+                                                <form name=form action="InicioSesion">
+                                                
+                                                <label> Usuario:    <INPUT type="text" name="user" color="white"> </label>
+                                                    <br>
+                                                    <br>
+                                                <label > Contraseña: <INPUT type="pass" name="pass" color="white"></label> 
+                                                    <br>
+                                                    <br>
+                                                <input type="submit" value=Acceder class="boton">
+                                                <input type="reset" value="Borrar Datos" class="boton">
+                                                </form> 
+                                            <br>
+                                        </article>
+                                    </header> 
+                                </div>
+                                <a href="#" class="btn-close-modal2"></a>
+                            </aside>
                 
                     </ul>
             </div>        
@@ -156,7 +149,7 @@
 
         <article>
                 <section>
-                    <H1>SPIDER BYTE<marquee direction="right">Enfermedades</marquee></H1>
+                    <H1><center>SPIDER BYTE</center><marquee direction="right">Enfermedades</marquee></H1>
 
                     <img src="./img/Logo_DoctorVirtual_N.png" height="150" border="6" class="hola">
                     <p style="font-size: 25px; text-align: right;">XFactor Enfermedades o MedicAsist</p>
@@ -178,7 +171,7 @@
                 <section class="segundo">
 
                     <p align="center">heee aqui un mapa mundial que va a contener las enfermedades mas comunes de los paises asi como graficas de porcentajes de esas mismas enfermedades</p>
-                    <p align="center"> pulse el pais que quiere revisar UnU</p>
+                    <p align="center"> pulse el pais que quiere revisar </p>
   
                         <div id="holder_1000" style="position:relative"></div>
 

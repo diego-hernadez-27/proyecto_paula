@@ -43,8 +43,8 @@ public class Registrar extends HttpServlet {
         email = request.getParameter("email");
         usu = request.getParameter("usuario");
         pass = request.getParameter("cont");
-        fper = request.getParameter("fper");
-        fpor = request.getParameter("fpor");
+        fper = request.getParameter("foto");
+        fpor =request.getParameter("fotos");
         
         Consultas co = new Consultas();
         if(co.registrar(nom, pat, mat, edad, email, usu, pass, fper, fpor)){
