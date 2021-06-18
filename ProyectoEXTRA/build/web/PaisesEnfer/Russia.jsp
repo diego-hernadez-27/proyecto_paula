@@ -51,7 +51,7 @@ function grafica1(){
 
 </head>
 <header class="header">
-      <a href="#" class="logo">MedicalAssist</a>
+      <a href="../menu.jsp" class="logo">MedicalAssist</a>
       <nav>
           
         <ul class="menu-items">

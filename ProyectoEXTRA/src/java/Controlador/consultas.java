@@ -165,8 +165,29 @@ public class consultas extends conexion{
         ResultSet rs = null;
         
         try{
+                
+            String q = "delete from TESTCOVID where usuario = ?";
+            ps = getConnection().prepareStatement(q);
+            ps.setString(1, usuario);
+            ps.executeUpdate(); 
             
-            String q = "delete from usuarios where usuario = ? and contraseña = ?";
+            System.out.println(ps.executeUpdate());
+            
+            q = "delete from TESTDIABETES where usuario = ?";
+            ps = getConnection().prepareStatement(q);
+            ps.setString(1, usuario);
+            ps.executeUpdate(); 
+            
+            System.out.println(ps.executeUpdate());
+            
+            q = "delete from TESTHIPERTENSION where usuario = ?";
+            ps = getConnection().prepareStatement(q);
+            ps.setString(1, usuario);
+            ps.executeUpdate(); 
+            
+            System.out.println(ps.executeUpdate());
+            
+            q = "delete from usuarios where usuario = ? and contraseña = ?";
             ps = getConnection().prepareStatement(q);
             ps.setString(1, usuario);
             ps.setString(2, contraseña);

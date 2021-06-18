@@ -35,7 +35,7 @@
      
     try{
            Class.forName("com.mysql.jdbc.Driver");                        
-           con = DriverManager.getConnection("jdbc:mysql://localhost/proyectoextra", "root", "Elgato66");
+           con = DriverManager.getConnection("jdbc:mysql://localhost/proyectoextra", "root", "admin");
            
   
         try {

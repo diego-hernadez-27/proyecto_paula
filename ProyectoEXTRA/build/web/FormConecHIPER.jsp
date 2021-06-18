@@ -35,7 +35,7 @@
      
     try{
            Class.forName("com.mysql.jdbc.Driver");                        
-           con = DriverManager.getConnection("jdbc:mysql://localhost/proyectoextra", "root", "Elgato66");
+           con = DriverManager.getConnection("jdbc:mysql://localhost/proyectoextra", "root", "admin");
            
   
         try {
@@ -131,7 +131,7 @@
                 <td><%=puntajeHIPER%></td>
                 <td><%=resHIPER%></td>
                 <td><%=usuario%></td>
-                <td><a href="resTestHIPER.jsp">VER RESULTADOS ANTERIORES</a></td>
+                <td><a href="resTestsHIPER.jsp">VER RESULTADOS ANTERIORES</a></td>
                 
                 </td>
             </tr>

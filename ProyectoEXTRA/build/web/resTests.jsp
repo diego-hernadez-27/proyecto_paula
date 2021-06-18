@@ -30,7 +30,7 @@
             String url = "jdbc:mysql://localhost:3306/proyectoextra";
             String Driver="com.mysql.jdbc.Driver";
             String user="root";
-            String clave="Elgato66";
+            String clave="admin";
             Class.forName(Driver);
             con=DriverManager.getConnection(url,user,clave);
             

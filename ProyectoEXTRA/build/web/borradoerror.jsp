@@ -21,7 +21,7 @@
         <br>
         <center><a href="menu.jsp">Regresar al menu</a></center>
         <br>
-        <center><a href="perfil.jsp">Registrar a perfil</a></center>
+        <center><a href="perfil.jsp">Regresar a perfil</a></center>
         </div>
         </form>
     </body>
