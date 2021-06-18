@@ -16,7 +16,8 @@
     <body>
         <script src="js/main.js"></script>
         <form action="iniciar" method="post" id="forminicio">
-                <img src="./img/Sistema.png" class="logoSis">
+            <img src="./img/Sistema.png" class="logoSis">
+            <br>
             <br>
             <div class="form">
             <h1>Iniciar Sesion</h1>
