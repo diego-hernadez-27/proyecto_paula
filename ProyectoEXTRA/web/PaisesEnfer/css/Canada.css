@@ -1,0 +1,83 @@
+section{
+    border: 0px solid #0aa5d4c5;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+
+article{
+    position: absolute;
+    width: 92%;
+    left: 3%;
+    height: 10%;
+
+}
+
+aside{
+    position: relative;
+    width: 10%;
+    height: 80%;
+    bottom: 2%;
+    
+}
+
+
+
+
+.Spider{
+    position: absolute;
+    height: 90px;
+    bottom: 18%;
+}
+
+img.hola{
+    position: absolute;
+    left: 5%;
+}
+
+
+
+
+
+.tercero{
+    position: absolute;
+    bottom: 1%;
+   
+    height: 350%;
+    right: 0.68%;
+    width: 98%;
+    left: 0%;
+    top: 320px;
+}
+
+.p{
+    height: 150px;
+    left: -20%;
+    top: 600px;
+    border-radius: 20px;
+    height: 100px;
+}
+
+section.l{
+    margin: 100px;
+    display: none;
+    justify-content: center;
+    max-height: 800px;
+    height: 680px;
+    
+}
+
+.l{
+    position: absolute;
+    bottom: 1%;
+    height: 340%;
+    right: 0.80%;
+    width: 101%;
+    left: -9%;
+    top: 500px;
+}
+
+
