@@ -56,12 +56,27 @@
 
 <body>
     <div class="cabezaxdxd">    
+   <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Menu principal</title>
+    </head>
+    <body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/paginaprincipal.css">
+    <script src="./js/Cordenadas.js" type="text/javascript"></script>
+    <script src="./js/Todo.js" type="text/javascript"></script>
+    
     <header class="header">
-      <a href="./menu.jsp" class="logo">MedicalAssist</a>
+      <a href="menu.jsp" class="logo">MedicalAssist</a>
       <nav>
           
         <ul class="menu-items">
-          <li><a href="#" class="menu-item">Bienvenido <% out.println(usuario);%></a></li>
+          <li><a href="menu.jsp" class="menu-item">Bienvenido <% out.println(usuario);%></a></li>
           <li class="dropdown">
             <a href="perfil.jsp" class="menu-item">Perfil</a>
           </li>
@@ -77,7 +92,7 @@
                         alt="Random Image" width="600" height="275"/></span
                   ></a>
                   <h2>COVID</h2>
-                  <p class="descrip">
+                  <p>
                       La COVID-19 afecta de distintas maneras en función de cada persona. La mayoría de las personas que se contagian presentan síntomas de intensidad leve o moderada, y se recuperan sin necesidad de hospitalización.
                   </p>
                   <a href="formulario.jsp" class="read-more"><font color="white">Realizar test</font></a>
@@ -90,7 +105,7 @@
                         alt="Random Image" width="600" height="275"/></span
                   ></a>
                   <h2>DIABETES</h2>
-                  <p class="descrip">
+                  <p>
                       La diabetes es una enfermedad en la que los niveles de glucosa (azúcar) de la sangre están muy altos. La glucosa proviene de los alimentos que consume. La insulina es una hormona que ayuda a que la glucosa entre a las células para suministrarles energía.
                   </p>
                   <a href="formularioD.jsp" class="read-more"><font color="white">Realizar test</font></a>
@@ -103,7 +118,7 @@
                         alt="Random Image" width="600" height="275"/></span
                   ></a>
                   <h2>HIPERTENSION ARTERIAL</h2>
-                  <p class="descrip">
+                  <p>
                       La hipertensión arterial es una enfermedad crónica en la que aumenta la presión con la que el corazón bombea sangre a las arterias, para que circule por todo el cuerpo.
                   </p>
                   <a href="formularioHIPER.jsp" class="read-more"><font color="white">Realizar test</font></a>
@@ -185,17 +200,21 @@
     <section class="accioneskawaii">
         <br>
         <br>
-        <br>
-        <br>
         <h3>Elija lo que quiera hacer con su usuario</h3>
         <br>
         <a href="actualizar.jsp"><img src="./img/Actualizar.png" width="150" height="80"></a>
-        <br>
         <a href="borrar.jsp"><img src="./img/Borrar.png" width="150" height="80"></a>
-    </section>                        
+        <br>
+        <a href="resTests.jsp"><button type="submit" value="Registrarme" id="btnregistrar">VER RESULTADOS COVID</button></a>
         
+        <a href="resTestsD.jsp"><button type="submit" value="Registrarme" id="btnregistrar">VER RESULTADOS DIABETES</button></a>
+      
+        <a href="resTestsHIPER.jsp"><button type="submit" value="Registrarme" id="btnregistrar">VER RESULTADOS HIPERTENSION ARTERIAL</button></a>
+   
     
-    <footer class="foter">
+    
+    </section>                        
+    <footer class="foterd">
 
         <div class="container-footer-all">
 

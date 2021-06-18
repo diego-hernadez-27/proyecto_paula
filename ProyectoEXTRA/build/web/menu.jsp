@@ -34,11 +34,11 @@
     <script src="./js/Todo.js" type="text/javascript"></script>
     
     <header class="header">
-      <a href="#" class="logo">MedicalAssist</a>
+      <a href="menu.jsp" class="logo">MedicalAssist</a>
       <nav>
           
         <ul class="menu-items">
-          <li><a href="#" class="menu-item">Bienvenido <% out.println(usuario);%></a></li>
+          <li><a href="menu.jsp" class="menu-item">Bienvenido <% out.println(usuario);%></a></li>
           <li class="dropdown">
             <a href="perfil.jsp" class="menu-item">Perfil</a>
           </li>

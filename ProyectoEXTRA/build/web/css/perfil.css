@@ -402,11 +402,11 @@ footer{
     color: white;   
 }
 
-.foter{
-    position: absolute;
+.foterd{
+    display: block;
     width: 100%;
     left: 0%;
-    top: 150%;
+    top: 10%;
     height: 70%;
 
 }
@@ -554,8 +554,25 @@ h2{
 }
 
 .logoemp{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     position: absolute;
     left: 11%;
+}
+button{
+    font-family: 'roboto';
+    background: #4568DC;
+    /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #b040b4, #1a43ca);
+  background: linear-gradient(to right, #b040b4, #1a43ca);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    display: block;
+    width: 20%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
 }

@@ -215,7 +215,6 @@ public class consultas extends conexion{
         
         return false;
     }
-    
     /*public static void main(String[] args){
         
         System.out.println(registrar("Diego", "Alberto", "15", "superstar", "gatitio","hola@hola.com"));

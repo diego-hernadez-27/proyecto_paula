@@ -26,25 +26,40 @@
     </head>
             <div class="contenedor">
     <body>
-           <header class="header">
-      <a href="#" class="logo">MedicalAssist</a>
+   <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Menu principal</title>
+    </head>
+    <body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/paginaprincipal.css">
+    <script src="./js/Cordenadas.js" type="text/javascript"></script>
+    <script src="./js/Todo.js" type="text/javascript"></script>
+    
+    <header class="header">
+      <a href="menu.jsp" class="logo">MedicalAssist</a>
       <nav>
           
         <ul class="menu-items">
-          <li><a href="#" class="menu-item">Bienvenido <% out.println(usuario);%></a></li>
+          <li><a href="menu.jsp" class="menu-item">Bienvenido <% out.println(usuario);%></a></li>
           <li class="dropdown">
             <a href="perfil.jsp" class="menu-item">Perfil</a>
           </li>
           <li>
-            <a href="#" class="menu-item"><font color="white">Realizar test</font></a>
+            <a href="#" class="menu-item">Realizar test</a>
             <div class="mega-menu blog">
               <div class="content">
                 <div class="col">
                   <a href="#" class="img-wrapper"
                     ><span class="img"
                       ><img
-                        src="https://picsum.photos/400?random=2"
-                        alt="Random Image" /></span
+                        src="./img/5e71213e25bcf.jpg"
+                        alt="Random Image" width="600" height="275"/></span
                   ></a>
                   <h2>COVID</h2>
                   <p>
@@ -56,8 +71,8 @@
                   <a href="#" class="img-wrapper"
                     ><span class="img"
                       ><img
-                        src="https://picsum.photos/400?random=3"
-                        alt="Random Image" /></span
+                        src="./img/OIP.jpg"
+                        alt="Random Image" width="600" height="275"/></span
                   ></a>
                   <h2>DIABETES</h2>
                   <p>
@@ -69,14 +84,14 @@
                   <a href="#" class="img-wrapper"
                     ><span class="img"
                       ><img
-                        src="https://picsum.photos/400?random=4"
-                        alt="Random Image" /></span
+                        src="./img/R0b86cf33d5f6bbb03e6e3881e7f140d6.jpg"
+                        alt="Random Image" width="600" height="275"/></span
                   ></a>
                   <h2>HIPERTENSION ARTERIAL</h2>
                   <p>
                       La hipertensión arterial es una enfermedad crónica en la que aumenta la presión con la que el corazón bombea sangre a las arterias, para que circule por todo el cuerpo.
                   </p>
-                  <a href="formularioHIPER.jsp" class="read-more">Realizar test</a>
+                  <a href="formularioHIPER.jsp" class="read-more"><font color="white">Realizar test</font></a>
                 </div>
               </div>
             </div>
